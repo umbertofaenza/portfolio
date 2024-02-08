@@ -25,10 +25,7 @@ export default {
               <!-- text -->
               <span class="jumbo-hello">e sono un</span>
               <!-- role -->
-              <h1 class="role">
-                junior web developer
-                <span class="full-stop">.</span>
-              </h1>
+              <h1 class="role">junior web developer</h1>
             </div>
           </div>
 
@@ -101,11 +98,6 @@ export default {
   color: #eee;
 
   width: fit-content;
-}
-
-.full-stop {
-  color: $secondary-color;
-  margin-left: -1rem;
 }
 
 .jumbo-btn {

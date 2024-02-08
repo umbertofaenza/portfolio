@@ -1,4 +1,16 @@
-<script></script>
+<script>
+import { latestProjectData } from "../../data/data";
+import { projectsData } from "../../data/data";
+
+export default {
+  data() {
+    return {
+      latestProjectData,
+      projectsData,
+    };
+  },
+};
+</script>
 
 <template>
   <div class="container">
@@ -21,7 +33,7 @@
         <div id="latest-project-card" class="card mb-5">
           <!--* title -->
           <h5 class="latest-project-title">
-            BoolBnb - Replica didattica di AirBnb (Progetto finale Boolean)
+            {{ latestProjectData.title }}
           </h5>
 
           <!--* media -->
@@ -34,32 +46,32 @@
                   <!-- video -->
                   <video controls>
                     <source
-                      src="../../../img/boolbnb_frontend.mp4"
+                      src="../../../img/boolbnb_frontoffice.mp4"
                       type="video/mp4"
                     />
                   </video>
                   <div class="carousel-caption d-none d-md-block mb-5">
-                    <h5 class="text-dark">BoolBnb - "Front office"</h5>
+                    <h5 class="text-dark"></h5>
                   </div>
                 </div>
                 <!-- item -->
                 <div class="carousel-item">
                   <!-- video -->
-                  <video controls>
+                  <video controls muted>
                     <source
-                      src="../../../img/boolbnb_backend.mp4"
+                      src="../../../img/boolbnb_backoffice.mp4"
                       type="video/mp4"
                     />
                   </video>
                   <div class="carousel-caption d-none d-md-block mb-5">
-                    <h5 class="text-dark">BoolBnb - "Back office"</h5>
+                    <h5 class="text-dark"></h5>
                   </div>
                 </div>
               </div>
 
               <!-- prev, next controls -->
               <button
-                class="carousel-control-prev"
+                class="carousel-control-prev h-50 m-auto"
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev"
@@ -71,7 +83,7 @@
                 <span class="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next"
+                class="carousel-control-next h-50 m-auto"
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next"
@@ -90,8 +102,7 @@
             <div class="latest-project-technologies">
               <h6>Tecnologie</h6>
               <p>
-                HTML, CSS (scss), BOOTSTRAP, VUEJS, LARAVEL, MYSQL + API
-                (interna)
+                {{ latestProjectData.technologies }}
               </p>
             </div>
 
@@ -99,46 +110,19 @@
             <div class="latest-project-description">
               <h6>Descrizione</h6>
               <p>
-                BoolBnb è stato il progetto finale del mio percorso con Boolean.
-                È stato realizzato in team e rappresenta la somma delle
-                competenze acquisite durante il bootcamp di sei mesi. Si tratta
-                di una replica "didattica" di AirBnb, focalizzata principalmente
-                sulle funzionalità della web app, mentre l'aspetto grafico è
-                stato considerato, in questo caso, di secondo piano.
+                {{ latestProjectData.description.firstPar }}
                 <br />
                 <br />
                 <span class="desc-p-title">Front-office</span>
                 <br />
-                All'arrivo sulla homepage, sviluppata con Vue, gli utenti
-                trovano un elenco di tutti gli appartamenti presenti nel
-                database (creato da noi), ottenuti tramite una chiamata API
-                (anch'essa creata da noi). Gli appartamenti sponsorizzati sono
-                visualizzati in cima, seguiti dagli altri. Grazie alla barra di
-                ricerca, gli utenti possono trovare gli appartamenti in base
-                all'indirizzo e accedere alla pagina di ricerca avanzata. Qui
-                possono visualizzare gli appartamenti entro un raggio di 20 km
-                dalla posizione cercata e filtrarli secondo le proprie esigenze.
-                Ogni scheda appartamento include dettagli aggiuntivi e una mappa
-                del quartiere, oltre a un modulo per contattare il proprietario.
+                {{ latestProjectData.description.secondPar }}
                 <br />
                 <br />
                 <span class="desc-p-title">Back-office</span>
                 <br />
-                Il back-office è dedicato ai proprietari ed è stato sviluppato
-                con Laravel. Gli utenti possono registrarsi, effettuare il login
-                e accedere al pannello di controllo dei propri appartamenti.
-                Possono aggiungere, modificare o eliminare appartamenti
-                esistenti. Inoltre, è possibile promuovere gli appartamenti
-                attraverso vari piani di promozione. Il sistema di pagamento è
-                simulato, in questo caso, grazie alla piattaforma Braintree di
-                PayPal. Gli appartamenti promossi vengono evidenziati nella
-                homepage per il periodo stabilito dal piano di promozione
-                selezionato.
+                {{ latestProjectData.description.thirdPar }}
               </p>
             </div>
-
-            <!--* links -->
-            <div class="project-links"></div>
           </div>
         </div>
       </section>
@@ -148,7 +132,9 @@
         <div class="col-12 col-xl-6">
           <div class="card h-100">
             <!-- title -->
-            <h5 class="project-title">Game Hoax</h5>
+            <h5 class="project-title">
+              {{ projectsData[0].title }}
+            </h5>
 
             <!-- media -->
             <video height="400" class="w-100" controls muted>
@@ -158,31 +144,31 @@
             <!-- technologies -->
             <div class="technologies">
               <h6>Tecnologie</h6>
-              <p>HTML, CSS (scss), BOOTSTRAP, VUEJS</p>
+              <p>
+                {{ projectsData[0].technologies }}
+              </p>
             </div>
 
             <!-- description -->
             <div class="description">
               <h6>Descrizione</h6>
               <p>
-                Game Hoax è stato il mio progetto conclusivo del modulo
-                front-end. Ho avuto l'opportunità di replicare autonomamente la
-                parte grafica (e non solo) di un sito web dedicato alla vendita
-                di videogiochi e accessori videoludici, partendo da un’immagine
-                statica fornitaci dai tutor.
+                {{ projectsData[0].description.firstPar }}
                 <br />
                 <br />
-                Il progetto è stato realizzato utilizzando Vue.js, sfruttando al
-                massimo la sua capacità di riuso dei componenti. A seconda della
-                sezione del sito, i componenti ricevevano le informazioni
-                pertinenti da visualizzare.
+                {{ projectsData[0].description.secondPar }}
                 <br />
                 <br />
-                Oltre a implementare vari effetti in hover e posizionare
-                elementi in modo sovrapposto per creare un'esperienza visiva
-                accattivante, sono inclusi tre caroselli e uno slider
-                temporizzato, programmati utilizzando JavaScript vanilla.
+                {{ projectsData[0].description.thirdPar }}
               </p>
+            </div>
+
+            <!-- link -->
+            <div class="btn link">
+              <a :href="projectsData[0].link" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -190,7 +176,9 @@
         <div class="col-12 col-xl-6">
           <div class="card h-100">
             <!-- title -->
-            <h5 class="project-title">Spotify Web Replica</h5>
+            <h5 class="project-title">
+              {{ projectsData[1].title }}
+            </h5>
 
             <!-- media -->
             <video height="400" class="w-100" controls muted>
@@ -200,28 +188,28 @@
             <!-- technologies -->
             <div class="technologies">
               <h6>Tecnologie</h6>
-              <p>HTML, CSS</p>
+              <p>
+                {{ projectsData[1].technologies }}
+              </p>
             </div>
 
             <!-- description -->
             <div class="description">
               <h6>Descrizione</h6>
               <p>
-                Questo progetto consiste nella replica grafica della ben nota
-                web app di Spotify. È stato realizzato utilizzando
-                esclusivamente HTML e CSS, il che lo ha reso un esercizio
-                pratico estremamente utile per consolidare le mie competenze
-                nella creazione di layout e nel posizionamento degli elementi,
-                senza dipendere da framework esterni.
+                {{ projectsData[1].description.firstPar }}
                 <br />
                 <br />
-                Come evidenziato nel video, la web app è completamente
-                responsive, garantendo un'ottima esperienza d'uso su dispositivi
-                di tutte le dimensioni, compresi gli smartphone. Poiché non sono
-                stati impiegati framework, la gestione della responsività è
-                stata interamente realizzata attraverso CSS, sfruttando le media
-                queries.
+                {{ projectsData[1].description.secondPar }}
               </p>
+            </div>
+
+            <!-- link -->
+            <div class="btn link">
+              <a :href="projectsData[1].link" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -229,35 +217,46 @@
         <div class="col-12 col-xl-6">
           <div class="card h-100">
             <!-- title -->
-            <h5 class="project-title">Boolflix</h5>
+            <h5 class="project-title">
+              {{ projectsData[2].title }}
+            </h5>
 
             <!-- media -->
-            <video height="400" class="w-100" controls muted>
+            <video
+              height="400"
+              class="w-100"
+              poster="../../../img/starwars_thumbnail.png"
+              controls
+              muted
+            >
               <source src="../../../img/boolflix.mp4" type="video/mp4" />
             </video>
 
             <!-- technologies -->
             <div class="technologies">
               <h6>Tecnologie</h6>
-              <p>HTML, CSS (scss), BOOTSTRAP, VUEJS + API (esterna)</p>
+              <p>
+                {{ projectsData[2].technologies }}
+              </p>
             </div>
 
             <!-- description -->
             <div class="description">
               <h6>Descrizione</h6>
               <p>
-                Boolflix è stato uno dei progetti chiave che mi ha introdotto
-                alle API esterne. Questa replica semplificata del sistema di
-                ricerca di Netflix funziona tramite chiamate Axios all'API
-                fornita da The Movie Database (TMDB).
+                {{ projectsData[2].description.firstPar }}
                 <br />
                 <br />
-                La web app è stata sviluppata con Vue: i dati ricevuti dall'API
-                sono memorizzati in uno store e poi richiamati dai vari
-                componenti presenti sulla piattaforma. Un semplice effetto hover
-                sulle schede dei film consente di visualizzare alcuni dettagli
-                relativi alla pellicola selezionata.
+                {{ projectsData[2].description.secondPar }}
               </p>
+            </div>
+
+            <!-- link -->
+            <div class="btn link">
+              <a :href="projectsData[2].link" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -265,7 +264,9 @@
         <div class="col-12 col-xl-6">
           <div class="card h-100">
             <!-- title -->
-            <h5 class="project-title">Boolzapp</h5>
+            <h5 class="project-title">
+              {{ projectsData[3].title }}
+            </h5>
 
             <!-- media -->
             <video height="400" class="w-100" controls muted>
@@ -275,28 +276,28 @@
             <!-- technologies -->
             <div class="technologies">
               <h6>Tecnologie</h6>
-              <p>HTML, CSS, BOOTSTRAP, VUEJS</p>
+              <p>
+                {{ projectsData[3].technologies }}
+              </p>
             </div>
 
             <!-- description -->
             <div class="description">
               <h6>Descrizione</h6>
               <p>
-                Nonostante abbia affrontato progetti più complessi più in là
-                durante il corso, Boolzapp è stato sicuramente uno dei più
-                entusiasmanti. Per la prima volta, ho avuto l'opportunità di
-                popolare la mia applicazione utilizzando informazioni
-                provenienti da una sorta di database, rappresentato da un file
-                JavaScript contenente un array di oggetti.
+                {{ projectsData[3].description.firstPar }}
                 <br />
                 <br />
-                Inoltre, sempre grazie a JavaScript, ho implementato diverse
-                funzionalità, tra cui l'eliminazione dei messaggi esistenti, la
-                scrittura e l'invio di nuovi messaggi, e persino la ricezione di
-                una risposta preimpostata. Questo progetto mi ha offerto
-                un'esperienza significativa nell'implementazione di logiche di
-                interazione dinamiche all'interno di un'applicazione web.
+                {{ projectsData[3].description.secondPar }}
               </p>
+            </div>
+
+            <!-- link -->
+            <div class="btn link">
+              <a :href="projectsData[3].link" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -304,7 +305,9 @@
         <div class="col-12 col-xl-6">
           <div class="card h-100">
             <!-- title -->
-            <h5 class="project-title">Discord</h5>
+            <h5 class="project-title">
+              {{ projectsData[4].title }}
+            </h5>
 
             <!-- media -->
             <video height="400" class="w-100" controls muted>
@@ -314,26 +317,28 @@
             <!-- technologies -->
             <div class="technologies">
               <h6>Tecnologie</h6>
-              <p>HTML, CSS</p>
+              <p>
+                {{ projectsData[4].technologies }}
+              </p>
             </div>
 
             <!-- description -->
             <div class="description">
               <h6>Descrizione</h6>
               <p>
-                Durante questo progetto, mi sono impegnato a replicare la parte
-                grafica del sito di Discord utilizzando HTML e CSS. Dopo
-                un'attenta analisi dell'immagine di riferimento, ho strutturato
-                il layout del sito utilizzando tag semantici per identificare le
-                diverse sezioni e gli elementi principali.
+                {{ projectsData[4].description.firstPar }}
                 <br />
                 <br />
-                Grazie a selettori CSS cosiddetti “di utilità”, ho simulato il
-                comportamento di una griglia come quella offerta da frameworks
-                come Bootstrap. Successivamente, ho applicato le regole CSS per
-                stilizzare gli elementi, cercando di ricreare fedelmente colori,
-                dimensioni e stili presenti nell'immagine originale.
+                {{ projectsData[4].description.secondPar }}
               </p>
+            </div>
+
+            <!-- link -->
+            <div class="btn link">
+              <a :href="projectsData[4].link" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -417,5 +422,24 @@ video {
 .latest-project-title {
   padding-bottom: 1rem;
   border-bottom: 1px solid $primary-color;
+}
+
+.fw-icon {
+  font-size: 1.5rem;
+}
+
+.btn.link {
+  color: $primary-color;
+  width: max-content;
+  border: 1.5px solid $primary-color;
+  padding: 0.5rem;
+  border-radius: 2rem;
+
+  margin-top: auto;
+}
+
+.btn.link:hover {
+  border: 1.5px solid $primary-color;
+  transform: scale(1.05);
 }
 </style>

@@ -26,8 +26,14 @@
       </div>
 
       <div class="other-info col-12">
-        Inoltre, ti ricordo che puoi trovare altre informazioni sul mio CV o
-        sulla pagina "Chi sono".
+        Inoltre, ti ricordo che puoi trovare altre informazioni sul mio
+        <a href="../../../img/UmbertoFaenza_CV.pdf" download
+          ><span class="secondary-clr-text">CV</span></a
+        >
+        o sulla pagina
+        <router-link :to="{ name: 'about' }"
+          ><span class="secondary-clr-text">Chi sono</span></router-link
+        >.
       </div>
     </section>
   </div>
@@ -84,6 +90,14 @@
 
 .other-info {
   margin-top: 5rem;
+}
+
+.fw-icon:hover {
+  transform: scale(1.1);
+}
+
+.secondary-clr-text {
+  color: $secondary-color;
 }
 
 @media only screen and (max-width: 430px) {

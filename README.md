@@ -1,7 +1,5 @@
-# Vue 3 + Vite
+# Umberto Faenza, Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Realizzato in Vue, questo piccolo sito portfolio mostra alcuni dei miei ultimi progetti, insieme ad informazioni e link utili su di me.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Developed with Vue, this little portfolio website showcases some of my latest projects, plus info and links about me.

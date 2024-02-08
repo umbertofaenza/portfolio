@@ -11,17 +11,18 @@
       <div class="paragraphs">
         <!-- Paragraph 1 -->
         <div class="par-1 row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-3" id="about-img">
             <img
-              src="../../../img/foto_bw.jpg"
+              src="../../../img/foto_profilo.jpg"
               alt="umberto faenza, bianco e nero"
               class="bw-img"
             />
           </div>
 
-          <div class="col-12">
+          <div class="col-12 col-lg-9">
             <p>
-              Mi chiamo Umberto Faenza e sono un Junior Web Developer.
+              Mi chiamo <span class="secondary-clr-text">Umberto Faenza</span> e
+              sono un Junior Web Developer.
               <br />
               Vengo da Battipaglia, nella provincia di Salerno e sì, ho
               un'ossessione per le mozzarelle.
@@ -63,7 +64,14 @@
           <div class="col-12">
             <p>
               Per altre info, trovi il mio indirizzo email e tutti i link utili
-              nella pagina Contatti ed il mio CV da scaricare nella Homepage.
+              nella pagina
+              <router-link :to="{ name: 'contacts' }"
+                ><span class="secondary-clr-text">Contatti</span></router-link
+              >
+              ed il mio CV da scaricare nella
+              <router-link :to="{ name: 'home' }"
+                ><span class="secondary-clr-text">Homepage.</span></router-link
+              >
               <br />
               Ciao!
             </p>
@@ -91,22 +99,13 @@
   margin-left: -0.5rem;
 }
 
-div[class*="col-"] {
-  display: flex;
-  align-items: center;
-
-  padding: 0;
-}
-
 .row {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 img {
-  width: 50%;
-  margin-bottom: 1rem;
-
-  border-radius: 50%;
+  max-width: 100%;
+  border-radius: 2rem;
   aspect-ratio: 1;
   object-fit: cover;
   object-position: right;
@@ -117,9 +116,24 @@ p {
   line-height: 2rem;
 }
 
-@media only screen and (max-width: 992px) {
+.secondary-clr-text {
+  color: $secondary-color;
+}
+
+@media only screen and (max-width: 991px) {
   p {
     line-height: normal;
+  }
+
+  img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  img {
+    max-width: 250px;
   }
 }
 </style>
