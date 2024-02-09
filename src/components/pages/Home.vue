@@ -66,29 +66,22 @@ export default {
                   I miei progetti
                 </router-link>
               </div>
+
+              <!--* credits  -->
+              <div class="col-12 credits text-md-end">
+                <a
+                  class="d-none d-md-inline"
+                  href="https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#page=6&query=web%20dev&position=12&from_view=search&track=ais&uuid=5f3f30b1-9246-45fa-a4cf-aac18dc8b5d1"
+                >
+                  Image by storyset on Freepik</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <!--* credits  -->
-        <div class="col-12 credits text-md-end">
-          Made by Umberto Faenza, 2024
-          <a
-            class="d-none d-md-inline"
-            href="https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#page=6&query=web%20dev&position=12&from_view=search&track=ais&uuid=5f3f30b1-9246-45fa-a4cf-aac18dc8b5d1"
-          >
-            - Image by storyset on Freepik</a
-          >
-        </div>
-      </div>
-    </div>
-  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -98,7 +91,6 @@ export default {
 
 #jumbo {
   width: 100%;
-  height: calc(100vh - 154px);
 }
 
 #jumbo > .container {
@@ -176,7 +168,7 @@ export default {
 
 @media only screen and (max-width: 399px) {
   #jumbo-text {
-    font-size: 10%;
+    font-size: 10vw;
   }
 }
 

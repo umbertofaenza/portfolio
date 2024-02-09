@@ -22,6 +22,7 @@ import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -30,7 +31,8 @@ library.add(
   faListCheck,
   faLinkedin,
   faGithub,
-  faInstagram
+  faInstagram,
+  faChevronUp
 );
 
 const app = createApp(App);
