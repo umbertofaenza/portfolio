@@ -43,7 +43,7 @@ export default {
         <ul class="navbar-nav">
           <li class="nav-item" :onclick="closeMenu">
             <router-link
-              class="nav-link"
+              class="nav-link fromLeft"
               aria-current="page"
               :to="{ name: 'home' }"
               >Home</router-link
@@ -52,7 +52,7 @@ export default {
 
           <li class="nav-item" :onclick="closeMenu">
             <router-link
-              class="nav-link"
+              class="nav-link fromLeft"
               aria-current="page"
               :to="{ name: 'projects' }"
               >Progetti</router-link
@@ -61,7 +61,7 @@ export default {
 
           <li class="nav-item" :onclick="closeMenu">
             <router-link
-              class="nav-link"
+              class="nav-link fromLeft"
               aria-current="page"
               :to="{ name: 'about' }"
               >Chi sono</router-link
@@ -70,7 +70,7 @@ export default {
 
           <li class="nav-item" :onclick="closeMenu">
             <router-link
-              class="nav-link"
+              class="nav-link fromLeft"
               aria-current="page"
               :to="{ name: 'contacts' }"
               >Contatti</router-link

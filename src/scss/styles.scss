@@ -100,7 +100,7 @@ a {
   font-family: "Mynerve";
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .navbar-nav {
     margin: 1rem 0;
   }
@@ -122,9 +122,27 @@ a {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
   .navbar-nav {
     margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-link:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #eee;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .nav-link:hover:after {
+    transform: scaleX(1);
+  }
+
+  .nav-link.fromLeft:after {
+    transform-origin: 0% 50%;
   }
 }
 
@@ -136,5 +154,11 @@ a {
 
   .header-email:hover {
     background-color: #eee;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 1rem;
   }
 }
