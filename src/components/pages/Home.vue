@@ -45,7 +45,7 @@ export default {
                 <!-- cv download -->
                 <a
                   class="btn jumbo-btn"
-                  href="../../../img/UmbertoFaenza_CV.pdf"
+                  href="./../../../public/docs/UmbertoFaenza_CV.pdf"
                   download
                 >
                   <font-awesome-icon
