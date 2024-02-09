@@ -4,7 +4,7 @@ const latestProjectData = {
     "HTML, CSS (scss), BOOTSTRAP, VUEJS, LARAVEL, MYSQL + API (interna)",
   description: {
     firstPar:
-      'BoolBnb è stato il progetto finale del mio percorso con Boolean.È stato realizzato in team e rappresenta la somma delle competenze acquisite durante il bootcamp di sei mesi. Si tratta di una replica "didattica" di AirBnb, focalizzata principalmente sulle funzionalità della web app, mentre l\'aspetto grafico èstato considerato, in questo caso, di secondo piano.',
+      'BoolBnb è stato il progetto finale del mio percorso con Boolean. È stato realizzato in team e rappresenta la somma delle competenze acquisite durante il bootcamp di sei mesi. Si tratta di una replica "didattica" di AirBnb, focalizzata principalmente sulle funzionalità della web app, mentre l\'aspetto grafico èstato considerato, in questo caso, di secondo piano.',
     secondPar:
       "All'arrivo sulla homepage, sviluppata con Vue, gli utenti trovano un elenco di tutti gli appartamenti presenti nel database (creato da noi), ottenuti tramite una chiamata API (anch'essa creata da noi) Gli appartamenti sponsorizzati sono visualizzati in cima, seguiti dagli altri. Grazie alla barra di ricerca, gli utenti possono trovare gli appartamenti in base all'indirizzo e accedere alla pagina di ricerca avanzata. Qui possono visualizzare gli appartamenti entro un raggio di 20 km dalla posizione cercata e filtrarli secondo le proprie esigenze. Ogni scheda appartamento include dettagli aggiuntivi e una mappa del quartiere, oltre a un modulo per contattare il proprietario.",
     thirdPar:
