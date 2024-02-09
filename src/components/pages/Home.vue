@@ -14,9 +14,9 @@ export default {
     <!--# jumbo -->
     <div id="jumbo">
       <div class="container">
-        <div class="jumbo row">
+        <div class="jumbo row w-100">
           <!--* jumbo text -->
-          <div class="col-12">
+          <div class="col-8 d-flex align-items-center">
             <div id="jumbo-text">
               <!-- text -->
               <span class="jumbo-hello">Ciao, mi chiamo</span>
@@ -27,6 +27,15 @@ export default {
               <!-- role -->
               <h1 class="role">junior web developer</h1>
             </div>
+          </div>
+
+          <!--* img -->
+          <div class="d-none d-md-flex col-md-4 align-items-center">
+            <img
+              class="jumbo-img"
+              src="../../../img/webdev.svg"
+              alt="web_dev"
+            />
           </div>
 
           <!--* jumbo buttons -->
@@ -63,6 +72,23 @@ export default {
       </div>
     </div>
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!--* credits  -->
+        <div class="col-12 credits text-md-end">
+          Made by Umberto Faenza, 2024
+          <a
+            class="d-none d-md-inline"
+            href="https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#page=6&query=web%20dev&position=12&from_view=search&track=ais&uuid=5f3f30b1-9246-45fa-a4cf-aac18dc8b5d1"
+          >
+            - Image by storyset on Freepik</a
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -98,6 +124,10 @@ export default {
   color: #eee;
 
   width: fit-content;
+}
+
+.jumbo-img {
+  max-width: 100%;
 }
 
 .jumbo-btn {
@@ -137,6 +167,11 @@ export default {
 
 #social-links li {
   margin-right: 2rem;
+}
+
+.credits {
+  font-size: 0.7rem;
+  color: $secondary-color;
 }
 
 @media only screen and (max-width: 399px) {
