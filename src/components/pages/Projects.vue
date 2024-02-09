@@ -112,12 +112,19 @@ export default {
               <p>
                 {{ latestProjectData.description.firstPar }}
                 <br />
-                <br />
+                <br class="d-sm-none" />
+                <span class="d-sm-none"
+                  >NB. Più info nella versione desktop del sito</span
+                >
+              </p>
+
+              <p class="d-none d-sm-block">
                 <span class="desc-p-title">Front-office</span>
                 <br />
                 {{ latestProjectData.description.secondPar }}
-                <br />
-                <br />
+              </p>
+
+              <p class="d-none d-sm-block">
                 <span class="desc-p-title">Back-office</span>
                 <br />
                 {{ latestProjectData.description.thirdPar }}
