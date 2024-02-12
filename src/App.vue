@@ -42,7 +42,7 @@ window.addEventListener("scroll", (e) => {
 .scroll-up {
   background-color: $secondary-color;
   color: $primary-color;
-  width: 2rem;
+  width: 30px;
   aspect-ratio: 1;
   border-radius: 50%;
 
@@ -51,8 +51,8 @@ window.addEventListener("scroll", (e) => {
   align-items: center;
 
   position: fixed;
-  bottom: 2rem;
-  right: 0.5rem;
+  bottom: 20px;
+  right: 10px;
   cursor: pointer;
   z-index: 2;
 
