@@ -186,6 +186,9 @@ export default {
   }
 }
 
-@media only screen and (max-width: 345px) {
+@media only screen and (min-width: 768px) {
+  #jumbo {
+    margin-top: 5rem;
+  }
 }
 </style>
