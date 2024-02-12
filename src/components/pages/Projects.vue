@@ -17,9 +17,11 @@ export default {
     <section id="projects row">
       <!--# projects header -->
       <div id="projects-header" class="col-12">
-        <h2 class="section-title">Progetti <span class="full-stop">.</span></h2>
+        <h2 class="section-title animate__animated animate__fadeIn">
+          Progetti <span class="full-stop">.</span>
+        </h2>
 
-        <p>
+        <p class="animate__animated animate__fadeIn">
           Ho selezionato alcuni dei progetti che ho realizzato negli ultimi sei
           mesi, ma puoi trovarne altri sul mio Github.
           <br />
