@@ -2,32 +2,39 @@
 
 <template>
   <div class="container">
-    <section id="contacts" class="row">
+    <section id="contacts" class="row animate__animated animate__fadeIn">
       <h2 class="section-title">
         Contatti
         <span class="full-stop">.</span>
       </h2>
-      <span>Vuoi metterti in contatto con me?</span>
+      <p>Vuoi metterti in contatto con me?</p>
 
+      <!-- email -->
       <div class="contacts-email col-12">
         Scrivimi un'email:
-        <span class="email-span">umberto.faenza@gmail.com</span>
+        <span class="email-span animate__animated animate__fadeInLeft"
+          >umberto.faenza@gmail.com</span
+        >
       </div>
 
+      <!-- socials -->
       <div class="contacts-social-links col-12">
         Oppure trovami su:
         <br />
-        <a href="https://www.linkedin.com/in/umbertofaenza/" target="_blank">
-          <font-awesome-icon icon="fa-brands fa-linkedin" class="fw-icon" />
-        </a>
-        <a href="https://github.com/umbertofaenza" target="_blank">
-          <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
-        </a>
+        <p class="animate__animated animate__fadeInLeft">
+          <a href="https://www.linkedin.com/in/umbertofaenza/" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-linkedin" class="fw-icon" />
+          </a>
+          <a href="https://github.com/umbertofaenza" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-github" class="fw-icon" />
+          </a>
+        </p>
       </div>
 
+      <!-- other info -->
       <div class="other-info col-12">
         Inoltre, ti ricordo che puoi trovare altre informazioni sul mio
-        <a href="../../../img/UmbertoFaenza_CV.pdf" download
+        <a href="docs/UmbertoFaenza_CV.pdf" download
           ><span class="secondary-clr-text">CV</span></a
         >
         o sulla pagina

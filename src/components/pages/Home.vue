@@ -19,13 +19,21 @@ export default {
           <div class="col-8 d-flex align-items-center">
             <div id="jumbo-text">
               <!-- text -->
-              <span class="jumbo-hello">Ciao, mi chiamo</span>
+              <span class="jumbo-hello"> Ciao, mi chiamo </span>
               <!-- name -->
-              <h2 class="name">umberto faenza</h2>
+              <h2
+                class="name animate__animated animate__fadeInLeft animate__slow"
+              >
+                umberto faenza
+              </h2>
               <!-- text -->
               <span class="jumbo-hello">e sono un</span>
               <!-- role -->
-              <h1 class="role">junior web developer</h1>
+              <h1
+                class="role animate__animated animate__fadeInLeft animate__slow"
+              >
+                junior web developer
+              </h1>
             </div>
           </div>
 
@@ -105,6 +113,7 @@ export default {
 }
 
 .jumbo-hello {
+  display: block;
   font-size: 2rem;
   font-weight: 300;
   color: $secondary-color;

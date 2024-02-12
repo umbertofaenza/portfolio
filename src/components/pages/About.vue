@@ -3,7 +3,7 @@
 <template>
   <div class="container">
     <section id="about">
-      <h2 class="section-title">
+      <h2 class="section-title animate__animated animate__fadeIn">
         Chi sono
         <span class="full-stop">.</span>
       </h2>
@@ -14,8 +14,8 @@
           <div class="col-12 col-lg-3" id="about-img">
             <img
               src="../../../img/foto_profilo.jpg"
-              alt="umberto faenza, bianco e nero"
-              class="bw-img"
+              alt="umberto faenza"
+              class="profile-img"
             />
           </div>
 
