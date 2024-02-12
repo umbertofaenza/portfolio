@@ -8,6 +8,9 @@ import "./scss/styles.scss";
 //# bootstrap's js
 import * as bootstrap from "bootstrap";
 
+//# animate.style
+import "../node_modules/animate.css/animate.css";
+
 //# fontawesome
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
