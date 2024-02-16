@@ -23,7 +23,10 @@ export default {
 
         <p class="animate__animated animate__fadeIn">
           Ho selezionato alcuni dei progetti che ho realizzato negli ultimi sei
-          mesi, ma puoi trovarne altri sul mio Github.
+          mesi, ma puoi trovarne altri sul mio
+          <a href="https://github.com/umbertofaenza" class="secondary-clr-text"
+            >Github</a
+          >.
           <br />
           Spoiler: il mio ultimo progetto in realtà è questo portfolio!
         </p>
@@ -358,6 +361,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../scss/_partials/variables.scss";
+
+.secondary-clr-text {
+  color: $secondary-color;
+}
 
 .container {
   margin-top: 1rem;
