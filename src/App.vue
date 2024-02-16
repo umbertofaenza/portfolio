@@ -52,7 +52,7 @@ window.addEventListener("scroll", (e) => {
 
   position: fixed;
   bottom: 20px;
-  right: 10px;
+  right: 15px;
   cursor: pointer;
   z-index: 2;
 
